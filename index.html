@@ -3,45 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Rotating Lights</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background: white;
-      height: 100%;
-      font-family: 'Poppins', sans-serif;
-    }
+  <title>Quebra-Cabeça do Suspeito</title>
 
-    canvas {
-      display: block;
-      position: fixed;
-      top: 0;
-      left: 0;
-      pointer-events: none; /* Faz com que o canvas não interfira na interação com outros elementos */
-    }
-
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 3rem;
-      color: white;
-      text-align: center;
-      z-index: 1; /* Garante que o texto fique acima do canvas */
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Hero Section -->
+  <div class="hero-text">Role a página para saber mais</div>
 
-  <div class="hero-text">Role para revelar o suspeito</div>
-
+  <!-- Canvas para efeito de luz -->
   <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
   <script src="rotatingLight.js"></script>
+
+  <!-- Scroll Container -->
+  <div class="scroll-container">
+    <div class="puzzle-container">
+      <!-- 9 Peças do quebra-cabeça -->
+      <div class="puzzle-piece" id="piece-1">1</div>
+      <div class="puzzle-piece" id="piece-2">2</div>
+      <div class="puzzle-piece" id="piece-3">3</div>
+      <div class="puzzle-piece" id="piece-4">4</div>
+      <div class="puzzle-piece" id="piece-5">5</div>
+      <div class="puzzle-piece" id="piece-6">6</div>
+      <div class="puzzle-piece" id="piece-7">7</div>
+      <div class="puzzle-piece" id="piece-8">8</div>
+      <div class="puzzle-piece" id="piece-9">9</div>
+    </div>
+  </div>
+
+  <script src="puzzleScroll.js"></script>
 </body>
 </html>

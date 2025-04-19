@@ -2,41 +2,20 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RogireP</title>
-
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Hero Section -->
-  <div class="hero-text">Role a página para saber mais</div>
+  <div id="container">
+    <img id="mystery" src="images/mistery_man.jpeg" />
+    <canvas id="scratch"></canvas>
+  </div>
 
-  <!-- Canvas para efeito de luz -->
+  <div class="hero-text">Raspe para identificar o suspeito</div>
+  <script src="scratch.js"></script>
+
   <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
   <script src="rotatingLight.js"></script>
-
-  <!-- Scroll Container -->
-  <div class="scroll-container">
-    <div class="puzzle-container">
-      <!-- 9 Peças do quebra-cabeça -->
-      <div class="puzzle-piece" id="piece-1">1</div>
-      <div class="puzzle-piece" id="piece-2">2</div>
-      <div class="puzzle-piece" id="piece-3">3</div>
-      <div class="puzzle-piece" id="piece-4">4</div>
-      <div class="puzzle-piece" id="piece-5">5</div>
-      <div class="puzzle-piece" id="piece-6">6</div>
-      <div class="puzzle-piece" id="piece-7">7</div>
-      <div class="puzzle-piece" id="piece-8">8</div>
-      <div class="puzzle-piece" id="piece-9">9</div>
-    </div>
-  </div>
-
-  <!-- Contêiner da Raspadinha (inicialmente oculto) -->
-  <div id="js--sc--container" style="display: none;">
-    <!-- Aqui ficará o efeito de raspadinha -->
-  </div>
-
-  <script src="puzzleScroll.js"></script>
 </body>
 </html>

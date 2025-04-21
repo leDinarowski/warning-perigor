@@ -47,3 +47,10 @@
       });
       canvas.dispatchEvent(mouseEvent);
     });
+
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const mystery = document.getElementById('mystery');
+        mystery.style.opacity = '1';
+      }, 500); // 0.5 segundos
+    });
